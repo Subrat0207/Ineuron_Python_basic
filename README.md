@@ -1,6 +1,6 @@
 # Ineuron_Python_basic
 
-This is very simple GUI application with basic Pythin.
+This is very simple GUI application with basic Python.
 
 Tkinter used here for GUI.
 
