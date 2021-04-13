@@ -14,3 +14,6 @@ There would be another button for MERGE . If user click then , containts of all 
 
 in that GUI itself.
 
+Adding Snapshot of the GUI:
+
+![APP_GUI](https://user-images.githubusercontent.com/45527020/114488961-eab41b00-9c2f-11eb-8ece-6c8bf7b4d258.PNG)
