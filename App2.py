@@ -18,19 +18,6 @@ def input_name():
     print("ENMTRY", entry)
     return entry
 
-
-def display_name():
-    """
-    This Actually Insert the Output of Search in side the TEXT
-    :return: nothing
-    """
-    name = input_name()
-    print("am in ", name)
-    name_display = tk.Text(master=window, height=10, width=30)
-    name_display.grid(column=0, row=5)
-    name_display.insert(tk.END, name)
-
-
 def find_drive():
     """
     This function responsible for findings the existing drives names and return the same
@@ -45,7 +32,7 @@ def find_drive():
 
     for d in dl:
         if os.path.exists(d + ':'):
-            print(str(d + ':'))
+            #print(str(d + ':'))
             drives.append(d + ':\\')
 
     # drives = [d for d in dl if os.path.exists ]
@@ -71,7 +58,7 @@ def find_file(file_name_input, drive_names_list):
                     file_present_flag = True
 
     if len(file_path_list) == 0:
-        print(" Warning : no file found ")
+        #print(" Warning : no file found ")
         file_path_list.append("No Such files")
 
     return file_path_list, file_present_flag
@@ -108,7 +95,7 @@ def file_merger():
     file_path_list,  file_present_flag = find_file(file_name_input, drive_names_list)
     file_path_display = tk.Text(master=window, height=20, width=60)
     file_path_display.grid(column=0, row=6)
-    k_temp = 'c:\\temp.txt'
+    k_temp = 'c:\\temp.txt' # Hard coded Temp file
     if file_present_flag == True:
         if ('.txt' in file_name_input)  or ('.docx' in file_name_input):
             for file_name in file_path_list:
@@ -128,7 +115,7 @@ def file_merger():
 
 
 
-
+#---------------------------------------------------------------------------------------------
 
 # -----Label Information----
 title = tk.Label(text=" **Welcome to my app2**")
